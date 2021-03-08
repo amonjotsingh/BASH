@@ -1,0 +1,22 @@
+##  ON HOST MACHINE SIDE
+
+#The solution for this problem for us is to connect the board to the network via the medium we are using that is a USB cable. In order to do that we have to 
+#STEP 1:
+#Configure host machine to forward packets
+#Finding the interface of the host machine’s Wireless network and USB Ethernet interface. 
+#this command will enable the forwarding on the machine side
+sysctl net.ipv4.ip_forward=1
+sysctl net.ipv6.conf.all.forwarding=1
+
+#These commands will flush the old rules and firewall so that nothing blocks us from forwarding data
+ sudo iptables -t nat -F
+ sudo iptables -t mangle -F
+ sudo iptables -F
+ sudo iptables -X
+
+#this command will enable forwarding data from our ethernet port
+iptables --table nat --append POSTROUTING --out-interface enp0s20f0u2 -j MASQUERADE
+
+#this command will forward data to port where beaglebone is connected
+iptables --append FORWARD --in-interface enxe415f6f84a17 -j ACCEPT
+
