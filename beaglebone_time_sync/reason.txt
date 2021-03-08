@@ -1,0 +1,5 @@
+As there is no battery backup inside the Beaglebone Black board,
+it is not able to retain real time clock. So, whenever we 
+connect Beaglebone to our machine and type $date command it’ll show
+the last time it was synced with real time clock or the time it was manually set to unless it is connected to network 
+,then it obtain the real time from the network we are using
