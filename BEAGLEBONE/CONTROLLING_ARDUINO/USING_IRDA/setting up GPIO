@@ -1,0 +1,4 @@
+Firstly, we will have to set up a output gpio on the beaglebone side and for that we will need to go to 
+/sys/class/gpio by using command cd /sys/class/gpio . Then use   echo 45 > export  to enable a GPIO and 
+then you can check the direction of GPIO using cat direction and if the direction is in, it can be set 
+to out using echo out > direction
