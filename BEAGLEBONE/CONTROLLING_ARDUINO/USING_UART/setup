@@ -1,0 +1,2 @@
+STEP 1:
+checking theavailability of UART ports on beaglebone side and then enabling UART by going inside Udev.txt
