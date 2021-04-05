@@ -1,0 +1,2 @@
+We can use the terminal to open a webpage by using w3m tool. 
+Firstly, we have to install w3m tools using command sudo apt-get install w3m w3m-img and then we can open a url using w3m www.google.com
