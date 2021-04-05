@@ -1,0 +1,10 @@
+
+We can find the Ip address of host machine by using ifconfig command inside terminal  and Ip address on host machine side is 192.168.1.149
+
+We can find the Ip address of the host machine by using the ifconfig command after login in to the beaglebone Ip address on the beaglebone side is 192.168.0.123 and this ip address is global because this ip address can be accessed through the internet.
+
+We can ping the beaglebone from Host machine using the command ping followed by ip address of host machine ping 192.168.0.123
+    
+
+We can ping the host machine from Beaglebone side using the command ping followed by ip address of host machine ping 192.168.1.149 
+
