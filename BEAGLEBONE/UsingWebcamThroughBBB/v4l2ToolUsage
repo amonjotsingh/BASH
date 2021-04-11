@@ -1,0 +1,7 @@
+1. To check the lsit of available usb video devices we c use the command 
+    The list  will be sorted according to the order they are conncted 
+
+  $ v4l2-ctl --list-devices
+  
+  You can get information about a particular device by listing its modes 
+  $ v4l2-ctl --all -d 0
