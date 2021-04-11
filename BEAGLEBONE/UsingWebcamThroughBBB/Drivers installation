@@ -1,0 +1,9 @@
+In order to use webcam we have to install v4l2 drivers first
+
+Step1 :Always update the package lists to get information about the newest packages and their 
+dependencies, before installing a system library:
+$ sudo apt-get update
+$ apt-cache search v4l2
+
+Step2:Install the tools
+$ sudo apt-get install fswebcam gpicview libav-tools libv4l-dev
