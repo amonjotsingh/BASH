@@ -7,3 +7,7 @@ that will create a grabber executable file
 after running ./grabber you should be able to see a number of .ppm files
 
 and to combine those .ppm files in a video you need to use this command ~$ ./capture -d /dev/video0 -F -o -c 100 > output.raw 
+
+and to cinvert that .raw file to .mp4 format we need to use this command 
+
+~$ avconv -f h264 -i output.raw -vcodec copy output.mp4
