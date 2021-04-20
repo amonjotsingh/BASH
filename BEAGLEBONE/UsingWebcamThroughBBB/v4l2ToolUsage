@@ -5,3 +5,6 @@
   
   You can get information about a particular device by listing its modes 
   $ v4l2-ctl --all -d 0
+  
+  Using ~$ v4l2-ctl --set-fmt-video=width=1920,height=1080,pixelformat=1 -d 0 will make us able to set dimensions of the frame
+
