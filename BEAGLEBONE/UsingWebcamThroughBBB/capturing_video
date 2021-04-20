@@ -5,3 +5,5 @@ First we need to go to directory $ cd exploringBB/chp14/v4l2 and afterwards we n
 that will create a grabber executable file
 
 after running ./grabber you should be able to see a number of .ppm files
+
+and to combine those .ppm files in a video you need to use this command ~$ ./capture -d /dev/video0 -F -o -c 100 > output.raw 
