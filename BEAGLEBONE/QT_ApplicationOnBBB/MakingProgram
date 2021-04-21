@@ -1,0 +1,7 @@
+In order to make a executable program we have to make a directory and then make a file with the program, this can be achieved by following commands:
+
+debian@beaglebone:~$ mkdir qtproject
+debian@beaglebone:~$ cd qtproject
+
+debian@beaglebone:~/qtproject$ nano example.cpp
+
