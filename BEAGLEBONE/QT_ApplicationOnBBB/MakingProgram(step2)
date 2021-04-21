@@ -5,3 +5,15 @@ debian@beaglebone:~$ cd qtproject
 
 debian@beaglebone:~/qtproject$ nano example.cpp
 
+
+Program for exapmle.cpp
+#include <QApplication>
+#include <QLabel>
+int main(int argc, char *argv[ ]){
+
+ QApplication app(argc, argv);
+ QLabel label("Hello World!");
+ 	label.resize(200, 100);
+ 	label.show();
+ 	return app.exec();
+}
