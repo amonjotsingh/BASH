@@ -1,0 +1,5 @@
+In order to install qt tools insideypur beglebone you need the following commands and 
+
+debian@beaglebone:~$ sudo apt update
+debian@beaglebone:~$ apt-cache search qt5
+debian@beaglebone:~$ sudo apt install qt5-default
