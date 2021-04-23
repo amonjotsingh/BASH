@@ -1,0 +1,22 @@
+In this step we will use qmake command followed by .pro file that will generate Makefile after the execution of command
+
+debian@beaglebone:~/qtproject$ qmake qtproject.pro
+
+
+To create a executable file
+In this we will make a executable file using make command and we can check using ls command that we have and executable file
+
+debian@beaglebone:~/qtproject$ make
+
+
+debian@beaglebone:~/qtproject$ ls
+example.cpp  example.o  Makefile  qtproject  qtproject.pro
+
+
+STEP 7 : Running executable file
+Finally we will run the executable file
+
+debian@beaglebone:~/qtproject$ ./qtproject
+QXcbConnection: Could not connect to display 
+Aborted
+
