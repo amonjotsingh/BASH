@@ -17,6 +17,5 @@ STEP 7 : Running executable file
 Finally we will run the executable file
 
 debian@beaglebone:~/qtproject$ ./qtproject
-QXcbConnection: Could not connect to display 
-Aborted
+
 
