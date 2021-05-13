@@ -1,4 +1,0 @@
-
-$sudo fswebcam -c fswebcam.conf
-
-This command will create a .png file(image) with a name and resolution that we have already set in conf file
