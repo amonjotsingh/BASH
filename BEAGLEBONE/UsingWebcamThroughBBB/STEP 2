@@ -1,0 +1,9 @@
+STEP2: Change the directory to exploring beaglebone’s -> chapter 14 -> fswebcam
+~$ cd exploringBB/chp14/fswebcam  and then to  capture the frame from usb camera  $ sudo fswebcam -c fswebcam.conf   this command has to be executed. After the execution of this command a .png file with the name of exploringBB.png would be created inside the directory 
+V4L2 tools :
+To install the V4L2 tool we need to use the command ~$ sudo apt install libv4l-dev
+Using this command we will be able to list all the available devices 
+~$ v4l2-ctl --all -d 0 
+
+Using ~$ v4l2-ctl --all -d 0 we can get details of the drivers 
+Using ~$ v4l2-ctl --set-fmt-video=width=1920,height=1080,pixelformat=1 -d 0 will make us able to set dimensions of the frame
