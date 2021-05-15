@@ -1,0 +1,4 @@
+Using command ~$ ./capture -d /dev/video0 -F -o -c 100 > output.raw will Captures
+100 frames of H264 at 1920x1080  and to convert .raw file to .mp4 file we need to use 
+~$ avconv -f h264 -i output.raw -vcodec copy output.mp4
+
