@@ -1,0 +1,4 @@
+~$ gcc -O2 -Wall `pkg-config --cflags --libs libv4l2` grabber.c -o grabber
+
+This command will be create an executable grabber.c file and then after executing the ./grabber a number of .ppm files would be created,  .ppm file format describes an uncompressed color image format, which gpicview will display but as we do not have a HDMI gpicview can not be viewed
+
